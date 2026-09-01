@@ -1,0 +1,19 @@
+===BEGIN LAB1 SUBMISSION===
+student_id: 6705140004
+timestamp: 2026-09-01T07:09:14Z
+hostname: ubuntu
+---[user: getent passwd]---
+grace500:x:1002:1002::/home/grace500:/bin/sh
+---[group: getent group]---
+netadmins:x:1002:grace500
+---[user-in-group: id]---
+uid=1002(grace500) gid=1002(netadmins) groups=1002(netadmins)
+---[file stat: home file mode/owner]---
+/home/grace500/report_4447.txt mode=640 owner=grace500 group=netadmins
+---[sshd effective config]---
+port 2206
+permitrootlogin no
+passwordauthentication no
+---[integrity]---
+sshd_sha256: a12f7968954bc0119391b46bc318e38c1a1087850043a5d8598f1362fd6b7f8e
+===END LAB1 SUBMISSION===
